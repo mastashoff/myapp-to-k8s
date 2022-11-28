@@ -16,4 +16,4 @@ spec:
       - name: myapp
         image: mastashoff/myapp:1.0
         ports:
-        - containerPort: 8080
+        - containerPort: 80
