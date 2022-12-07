@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp:v
+  name: myapp
   namespace: default
 spec:
   selector:
     matchLabels:
-      app: myapp:v
+      app: myapp
   replicas: 1
   template:
     metadata:
       labels:
-        app: myapp:v
+        app: myapp
     spec:
       containers:
-      - name: myapp:v
+      - name: myapp
         image: mastashoff/myapp:v1.0
         ports:
         - containerPort: 80
