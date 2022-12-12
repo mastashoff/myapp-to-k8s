@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: mastashoff/myapp:v13
+        image: mastashoff/myapp:v14
         ports:
         - containerPort: 80
