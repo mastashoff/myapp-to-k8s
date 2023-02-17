@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo_watches_myapp
+  name: argo-watches-myapp
   namespace: argocd
 spec:
   project: default
@@ -12,7 +12,7 @@ spec:
     path: k8s
   destination: 
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: myapp-ns
 
   syncPolicy:
     syncOptions:
@@ -21,3 +21,4 @@ spec:
     automated:
       selfHeal: true
       prune: true
+
